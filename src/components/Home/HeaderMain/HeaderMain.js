@@ -5,7 +5,7 @@ const HeaderMain = () => {
           return (
             <main
               style={{ height: "600px" }}
-              className="row d-flex align-items-center">
+              className="row d-flex mx-2 align-items-center">
               <div className="col-md-4 offset-md-1">
                 <h1 style={{ color: "#3A4256"}}>
                   Your New Smile <br />

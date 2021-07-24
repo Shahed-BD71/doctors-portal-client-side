@@ -7,19 +7,17 @@ import AvailableAppointment from "../AvailableAppointment/AvailableAppointment";
 
 const Appointment = () => {
    const [selectedDate, setSelectedDate] = useState(new Date())
-    const handleDateChange = (date) => {
-      setSelectedDate(date);
-    };
-          return (
-            <div>
-              <Navbar></Navbar>
-              <AppointmentHeader
-                handleDateChange={handleDateChange}
-              ></AppointmentHeader>
-              <AvailableAppointment date={selectedDate}></AvailableAppointment>
-              <Footer></Footer>
-            </div>
-          );
+   const handleDateChange = (date) => {
+   setSelectedDate(date);
+ };
+  return (
+    <div>
+      <Navbar></Navbar>
+      <AppointmentHeader handleDateChange={handleDateChange}></AppointmentHeader>
+      <AvailableAppointment date={selectedDate}></AvailableAppointment>
+      <Footer></Footer>
+    </div>
+  );
 };
 
 export default Appointment;

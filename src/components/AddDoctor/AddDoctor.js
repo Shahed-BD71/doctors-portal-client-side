@@ -25,7 +25,7 @@ const AddDoctor = () => {
     formData.append("degree", info.degree);
     formData.append("specialist", info.specialist);
 
-    fetch(`http://localhost:5000/addADoctor`, {
+    fetch(`https://doctorsportal.herokuapp.com/addADoctor`, {
       method: "POST",
       body: formData,
     })

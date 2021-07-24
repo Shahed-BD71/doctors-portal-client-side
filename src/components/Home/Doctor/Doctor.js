@@ -9,7 +9,7 @@ const Doctor = () => {
   console.log(doctors)
   
   useEffect(() => {
-    fetch(`http://localhost:5000/doctors`)
+    fetch(`https://doctorsportal.herokuapp.com/doctors`)
       .then((res) => res.json())
       .then((data) => setDoctors(data));
   }, []);

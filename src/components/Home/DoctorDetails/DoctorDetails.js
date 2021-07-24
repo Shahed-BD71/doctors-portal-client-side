@@ -15,7 +15,7 @@ const DoctorDetails = ({doctor}) => {
       ) : (
         <img
           className="img-fluid mb-3"
-          src={`http://localhost:5000/${doctor.img}`}
+          src={`https://doctorsportal.herokuapp.com/${doctor.img}`}
           alt=""
         />
       )}

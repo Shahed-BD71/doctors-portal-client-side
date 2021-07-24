@@ -1,12 +1,15 @@
 .header-container {
-    height:800px;
+
     position:relative;
     background-image: url('../../../images/Chair-BG.png');
     background-size: cover;
+    margin-right: 0px;
 }
 .header-container::after {
     height:700px;
+    width:100%;
     content:' ';
+    margin-right: 0px;
     position: absolute;
     top: 0;
     width: 30%;
